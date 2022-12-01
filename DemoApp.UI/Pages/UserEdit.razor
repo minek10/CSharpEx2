@@ -1,0 +1,43 @@
+﻿@page "/useredit"
+@page "/useredit/{Id}"
+@using DemoApp.UI.Shared.Component
+
+
+<EditForm Model="@Item" OnValidSubmit="@HandleValidRequest">
+    
+    <div class="bg-dark">
+        <h3 class="my-3 text-white py-2"><i class="fa fa-chevron-circle-right mx-2" aria-hidden="true"></i>@(Item.Id == Guid.Empty ? " Ajouter un nouvel utilisateur" :" Editer un utilisateur")</h3>
+    </div>
+
+    @if (_isLoading)
+    {
+        <Loader />
+    }
+    else
+    {
+        <div class="form-group col-md-6">
+            <BtnReturn AddLink="/" />
+
+            <div class="form-group row my-3">
+                <label for="inputFirstName" class="col-sm-2 col-form-label">Nom</label>
+                <div class="col-sm-10">
+                    <InputText @bind-Value="Item.FirstName" class="form-control" id="inputFirstName" placeholder="Dupont"></InputText>
+                    <ValidationMessage For="@(() => Item.FirstName)" />
+                </div>
+            </div>
+
+            <div class="form-group row my-3">
+                <label for="inputLastName" class="col-sm-2 col-form-label">Prénom</label>
+                <div class="col-sm-10">
+                    <InputText @bind-Value="Item.LastName" class="form-control" id="inputLastName" placeholder="Marcel"></InputText>
+                    <ValidationMessage For="@(() => Item.LastName)" />
+                </div>
+            </div>
+
+            <BtnSave />
+            <DataAnnotationsValidator />
+
+        </div>
+    }
+</EditForm>
+

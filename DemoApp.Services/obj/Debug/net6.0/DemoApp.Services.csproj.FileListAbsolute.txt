@@ -1,0 +1,15 @@
+C:\Source\repos\DemoApp\DemoApp.Services\bin\Debug\net6.0\DemoApp.Services.deps.json
+C:\Source\repos\DemoApp\DemoApp.Services\bin\Debug\net6.0\DemoApp.Services.dll
+C:\Source\repos\DemoApp\DemoApp.Services\bin\Debug\net6.0\DemoApp.Services.pdb
+C:\Source\repos\DemoApp\DemoApp.Services\bin\Debug\net6.0\DemoApp.Data.dll
+C:\Source\repos\DemoApp\DemoApp.Services\bin\Debug\net6.0\DemoApp.Data.pdb
+C:\Source\repos\DemoApp\DemoApp.Services\obj\Debug\net6.0\DemoApp.Services.csproj.AssemblyReference.cache
+C:\Source\repos\DemoApp\DemoApp.Services\obj\Debug\net6.0\DemoApp.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Source\repos\DemoApp\DemoApp.Services\obj\Debug\net6.0\DemoApp.Services.AssemblyInfoInputs.cache
+C:\Source\repos\DemoApp\DemoApp.Services\obj\Debug\net6.0\DemoApp.Services.AssemblyInfo.cs
+C:\Source\repos\DemoApp\DemoApp.Services\obj\Debug\net6.0\DemoApp.Services.csproj.CoreCompileInputs.cache
+C:\Source\repos\DemoApp\DemoApp.Services\obj\Debug\net6.0\DemoApp.Services.csproj.CopyComplete
+C:\Source\repos\DemoApp\DemoApp.Services\obj\Debug\net6.0\DemoApp.Services.dll
+C:\Source\repos\DemoApp\DemoApp.Services\obj\Debug\net6.0\refint\DemoApp.Services.dll
+C:\Source\repos\DemoApp\DemoApp.Services\obj\Debug\net6.0\DemoApp.Services.pdb
+C:\Source\repos\DemoApp\DemoApp.Services\obj\Debug\net6.0\ref\DemoApp.Services.dll

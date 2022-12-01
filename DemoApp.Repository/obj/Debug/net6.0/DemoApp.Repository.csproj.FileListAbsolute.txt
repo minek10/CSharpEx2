@@ -1,0 +1,15 @@
+C:\Source\repos\DemoApp\DemoApp.Repository\bin\Debug\net6.0\DemoApp.Repository.deps.json
+C:\Source\repos\DemoApp\DemoApp.Repository\bin\Debug\net6.0\DemoApp.Repository.dll
+C:\Source\repos\DemoApp\DemoApp.Repository\bin\Debug\net6.0\DemoApp.Repository.pdb
+C:\Source\repos\DemoApp\DemoApp.Repository\bin\Debug\net6.0\DemoApp.Data.dll
+C:\Source\repos\DemoApp\DemoApp.Repository\bin\Debug\net6.0\DemoApp.Data.pdb
+C:\Source\repos\DemoApp\DemoApp.Repository\obj\Debug\net6.0\DemoApp.Repository.csproj.AssemblyReference.cache
+C:\Source\repos\DemoApp\DemoApp.Repository\obj\Debug\net6.0\DemoApp.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Source\repos\DemoApp\DemoApp.Repository\obj\Debug\net6.0\DemoApp.Repository.AssemblyInfoInputs.cache
+C:\Source\repos\DemoApp\DemoApp.Repository\obj\Debug\net6.0\DemoApp.Repository.AssemblyInfo.cs
+C:\Source\repos\DemoApp\DemoApp.Repository\obj\Debug\net6.0\DemoApp.Repository.csproj.CoreCompileInputs.cache
+C:\Source\repos\DemoApp\DemoApp.Repository\obj\Debug\net6.0\DemoApp.Repository.csproj.CopyComplete
+C:\Source\repos\DemoApp\DemoApp.Repository\obj\Debug\net6.0\DemoApp.Repository.dll
+C:\Source\repos\DemoApp\DemoApp.Repository\obj\Debug\net6.0\refint\DemoApp.Repository.dll
+C:\Source\repos\DemoApp\DemoApp.Repository\obj\Debug\net6.0\DemoApp.Repository.pdb
+C:\Source\repos\DemoApp\DemoApp.Repository\obj\Debug\net6.0\ref\DemoApp.Repository.dll

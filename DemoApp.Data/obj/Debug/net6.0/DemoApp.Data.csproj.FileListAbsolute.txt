@@ -1,0 +1,12 @@
+C:\Source\repos\DemoApp\DemoApp.Data\bin\Debug\net6.0\DemoApp.Data.deps.json
+C:\Source\repos\DemoApp\DemoApp.Data\bin\Debug\net6.0\DemoApp.Data.dll
+C:\Source\repos\DemoApp\DemoApp.Data\bin\Debug\net6.0\DemoApp.Data.pdb
+C:\Source\repos\DemoApp\DemoApp.Data\obj\Debug\net6.0\DemoApp.Data.csproj.AssemblyReference.cache
+C:\Source\repos\DemoApp\DemoApp.Data\obj\Debug\net6.0\DemoApp.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Source\repos\DemoApp\DemoApp.Data\obj\Debug\net6.0\DemoApp.Data.AssemblyInfoInputs.cache
+C:\Source\repos\DemoApp\DemoApp.Data\obj\Debug\net6.0\DemoApp.Data.AssemblyInfo.cs
+C:\Source\repos\DemoApp\DemoApp.Data\obj\Debug\net6.0\DemoApp.Data.csproj.CoreCompileInputs.cache
+C:\Source\repos\DemoApp\DemoApp.Data\obj\Debug\net6.0\DemoApp.Data.dll
+C:\Source\repos\DemoApp\DemoApp.Data\obj\Debug\net6.0\refint\DemoApp.Data.dll
+C:\Source\repos\DemoApp\DemoApp.Data\obj\Debug\net6.0\DemoApp.Data.pdb
+C:\Source\repos\DemoApp\DemoApp.Data\obj\Debug\net6.0\ref\DemoApp.Data.dll

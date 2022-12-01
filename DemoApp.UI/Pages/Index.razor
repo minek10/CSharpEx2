@@ -1,0 +1,81 @@
+﻿@page "/"
+@using DemoApp.UI.Shared.Component
+
+<div class="bg-dark">
+    <h3 class="my-3 text-white py-2"><i class="fa fa-chevron-circle-right mx-2" aria-hidden="true"></i> Liste des utilisateurs</h3>
+</div>
+
+
+@if (_isLoading)
+{
+    <DemoApp.UI.Shared.Component.Loader />
+}
+else
+{
+    <EditForm Model="FilterSearch" OnValidSubmit="Filter">
+        <div class="mt-4">
+            <div class="form-row">
+                <div class="col-md-12">
+                    <label for="inputFilter" class="col-form-label">Rechercher</label>
+                    <InputText @bind-Value="@FilterSearch.Name" class="mx-3 col-2" maxlength="15"></InputText>
+                    <label for="inputFilterCategory" class="col-form-label">sur</label>
+                    <InputSelect @bind-Value="@FilterSearch.KOF" class="mx-3 col-2 form-control-sm">
+                        <option selected value="0">Aucun filtre sélectionné</option>
+                        @foreach (var filter in Filters)
+                        {
+                         <option value="@filter">@filter</option>
+                        }
+                    </InputSelect>
+                    <button class="btn btn-outline-dark rounded-circle border-0 me-3 " title="search"><span class="fa fa-search"></span></button>
+                    <a @onclick="() => LoadList()" class="col-3 pt-2 cursor">Réinitialiser la liste</a>
+
+                    <BtnAdd AddLink="useredit" />
+                </div>
+            </div>
+        </div>
+
+    </EditForm>
+
+
+
+    <table class="table table-hover table-sm mt-3 mb-3">
+        <thead>
+            <tr class="h5 fw-bold bg-dark text-white table-title">
+                <th class="col-5" scope="col">Nom <i @onclick="@(() => SortBy("firstname"))" class="oi oi-elevator fs-6"></i></th>
+                <th class="col-5" scope="col">Prénom <i @onclick="@(() => SortBy("lastname"))" class="oi oi-elevator fs-6"></i></th>
+                <th class="col-2 text-end pe-3" scope="col">Edition</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Users.Count == 0)
+            {
+                <tr>
+                    <td colspan="3" align="left" class="font-italic">@_message</td>
+                </tr>
+            }
+            else
+            {
+                @foreach (var item in Users)
+                {
+                    <tr>
+                        <td class="pt-2">@item.FirstName</td>
+                        <td class="pt-2">@item.LastName</td>
+                        <td class="text-end">
+                            <a class="btn btn-outline-dark rounded-circle border-0" title="Editer" href="useredit/@item.Id"><span class="oi oi-pencil"></span></a>
+                            <button class="btn btn-outline-danger rounded-circle border-0" title="Supprimer" @onclick="() => OpenDeleteDialog(item.Id)"><span class="oi oi-trash"></span></button>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+}
+
+@if (_isDeleteDialogOpen)
+{
+    <ModalDialog Title="Confirmation"
+             Text="Êtes-vous sûr de vouloir supprimer cet(te) utilisateur/trice ?"
+             OnClose="Delete"
+             DialogType="ModalDialog.ModalDialogType.YesCancel">
+    </ModalDialog>
+}
