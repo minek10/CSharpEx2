@@ -20,7 +20,6 @@ else
                     <InputText @bind-Value="@FilterSearch.Name" class="mx-3 col-2" maxlength="15"></InputText>
                     <label for="inputFilterCategory" class="col-form-label">sur</label>
                     <InputSelect @bind-Value="@FilterSearch.KOF" class="mx-3 col-2 form-control-sm">
-                        <option selected value="0">Aucun filtre sélectionné</option>
                         @foreach (var filter in Filters)
                         {
                          <option value="@filter">@filter</option>

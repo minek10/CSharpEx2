@@ -38,6 +38,10 @@ a, .btn-link {
     color: red;
 }
 
+.cursor{
+    cursor:pointer;
+}
+
 /*Region Modal*/
 .modal {
     width: auto;

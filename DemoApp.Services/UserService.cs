@@ -71,12 +71,12 @@ namespace DemoApp.Services
         #endregion
 
         #region GetUsersFilter
-        public async Task<List<User>> GetUsersFilter(string filter, KindOfFilter kof)
+        public async Task<List<User>> GetUsersFilter(string? filter, KindOfFilter kof)
         {
             try
             {
                 return await JsonSerializer.DeserializeAsync<List<User>>(
-                    await _httpClient.GetStreamAsync($"api/User/filter?filter={filter}&kindOfFilter={kof}"),
+                    await _httpClient.GetStreamAsync($"api/User/filter?filter={filter}&kindOfFilter={(int)kof}"),
                     new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
             }
             catch (Exception ex)

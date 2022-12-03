@@ -44,7 +44,7 @@ namespace DemoApp.UI.Pages
         protected async Task LoadList()
         {
             Users = (await UserService.GetUsersFilter(string.Empty, 0)).ToList();
-            //UsersCopy = Users;
+            UsersCopy = Users;
             FilterSearch = new();
             StateHasChanged();
         }
@@ -84,12 +84,24 @@ namespace DemoApp.UI.Pages
         #endregion
 
         #region Filter
-        protected async Task Filter()
+        protected void Filter()
         {
             if (!string.IsNullOrEmpty(FilterSearch.Name))
             {
-                string name = FilterSearch.Name.ToLower();
-                Users = (await UserService.GetUsersFilter(name, FilterSearch.KOF)).ToList();
+                string filter = FilterSearch.Name.ToUpper();
+
+                switch (FilterSearch.KOF)
+                {
+                    case KindOfFilter.Nom: 
+                        Users =  UsersCopy.Where(x => x.DeleteDate == null && x.FirstName.ToUpper().Contains(filter)).ToList();
+                        break;
+                    case KindOfFilter.Prenom:
+                        Users = UsersCopy.Where(x => x.DeleteDate == null && x.LastName.ToUpper().Contains(filter)).ToList();
+                        break;
+                    default: Users = UsersCopy;
+                        break;
+                }
+                StateHasChanged();
             }
         }
         #endregion

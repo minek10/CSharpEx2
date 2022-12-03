@@ -59,6 +59,58 @@ namespace DemoApp.Api.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("f7fe7458-b047-400f-ae5a-d11c3363e76f"),
+                            CreationDate = new DateTime(2022, 12, 2, 16, 54, 20, 863, DateTimeKind.Local).AddTicks(8796),
+                            CreationTrackingUserId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            DeleteTrackingUserId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            FirstName = "Hazard",
+                            LastName = "Eden",
+                            UpdateTrackingUserId = new Guid("00000000-0000-0000-0000-000000000000")
+                        },
+                        new
+                        {
+                            Id = new Guid("7305d300-6db2-4998-942f-4becb924917c"),
+                            CreationDate = new DateTime(2022, 12, 2, 16, 54, 20, 863, DateTimeKind.Local).AddTicks(8796),
+                            CreationTrackingUserId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            DeleteTrackingUserId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            FirstName = "Hazard",
+                            LastName = "Thorgan",
+                            UpdateTrackingUserId = new Guid("00000000-0000-0000-0000-000000000000")
+                        },
+                        new
+                        {
+                            Id = new Guid("3b13455d-38c9-40c6-a3da-1a229a68ed96"),
+                            CreationDate = new DateTime(2022, 12, 2, 16, 54, 20, 863, DateTimeKind.Local).AddTicks(8796),
+                            CreationTrackingUserId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            DeleteTrackingUserId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            FirstName = "Hazard",
+                            LastName = "Kylian",
+                            UpdateTrackingUserId = new Guid("00000000-0000-0000-0000-000000000000")
+                        },
+                        new
+                        {
+                            Id = new Guid("778f76b2-bbc2-41c0-8ddb-30d7c95eafc1"),
+                            CreationDate = new DateTime(2022, 12, 2, 16, 54, 20, 863, DateTimeKind.Local).AddTicks(8796),
+                            CreationTrackingUserId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            DeleteTrackingUserId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            FirstName = "Mpenza",
+                            LastName = "Emile",
+                            UpdateTrackingUserId = new Guid("00000000-0000-0000-0000-000000000000")
+                        },
+                        new
+                        {
+                            Id = new Guid("d693862f-5b0c-45b2-a494-17e9d61832e7"),
+                            CreationDate = new DateTime(2022, 12, 2, 16, 54, 20, 863, DateTimeKind.Local).AddTicks(8796),
+                            CreationTrackingUserId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            DeleteTrackingUserId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            FirstName = "Mpenza",
+                            LastName = "Mbo",
+                            UpdateTrackingUserId = new Guid("00000000-0000-0000-0000-000000000000")
+                        });
                 });
 #pragma warning restore 612, 618
         }

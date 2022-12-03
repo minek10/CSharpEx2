@@ -47,5 +47,26 @@ namespace DemoApp.Data.Context
 
             return base.SaveChangesAsync(acceptAllChangesOnSuccess, cancellationToken);
         }
+
+        #region Seed
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            DateTime dateOfDay = DateTime.Now;
+
+            modelBuilder.Entity<User>().HasData(
+                    new User { Id = Guid.NewGuid(), FirstName = "Hazard", LastName="Eden", CreationDate = dateOfDay });
+            modelBuilder.Entity<User>().HasData(
+                    new User { Id = Guid.NewGuid(), FirstName = "Hazard", LastName="Thorgan", CreationDate = dateOfDay });
+            modelBuilder.Entity<User>().HasData(
+                    new User { Id = Guid.NewGuid(), FirstName = "Hazard", LastName="Kylian", CreationDate = dateOfDay });
+            modelBuilder.Entity<User>().HasData(
+                    new User { Id = Guid.NewGuid(), FirstName = "Mpenza", LastName="Emile", CreationDate = dateOfDay });
+            modelBuilder.Entity<User>().HasData(
+                     new User { Id = Guid.NewGuid(), FirstName = "Mpenza", LastName="Mbo", CreationDate = dateOfDay });
+
+        }
+        #endregion
     }
 }
+

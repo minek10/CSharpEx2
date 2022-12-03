@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "z0qYvgzt0MQb79p32Su/cRcw04jAG9nmw2I7slJCjDbFYUAv1WQu75OGkIkxnQmwqiMGrTU5cgC4mLvEzZCswA==",
+  "dgSpecHash": "8uNirzPTZhvX67nm/mG7PAIDQtwbO+H3aZ6oJgsow+O49yVnv4TJa9dnGrD9gFwq7YTerLuR0RwIVUcb3VGrhg==",
   "success": true,
-  "projectFilePath": "C:\\Source\\repos\\DemoApp\\DemoApp.Api\\DemoApp.Api.csproj",
+  "projectFilePath": "C:\\Source\\repos\\DemoApp GIT\\DemoApp.Api\\DemoApp.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ricca\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Ricca\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

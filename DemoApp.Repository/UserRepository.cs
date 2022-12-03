@@ -28,6 +28,13 @@ namespace DemoApp.Repository
             return Users;
         }
 
+        public async override Task<User> GetById(Guid id)
+        {
+            User User = await _entities.Where(x => x.DeleteDate == null).FirstOrDefaultAsync();
+            return User;
+        }
+
+        #region GetUsersFiler
         public async Task<List<User>> GetUsersFilter(string filter, KindOfFilter kof)
         {
             try
@@ -42,26 +49,27 @@ namespace DemoApp.Repository
                     {
                         //Nom
                         case 1:
-                            Users = await _entities.Where(x => x.DeleteDate == null && (x.FirstName.ToUpper().Contains(filter)))
+                            return Users = await _entities.Where(x => x.DeleteDate == null && (x.FirstName.ToUpper().Contains(filter)))
                                                    .OrderBy(x => x.FirstName)
                                                    .ToListAsync();
                             break;
                         //Prenom
                         case 2:
-                            Users = await _entities.Where(x => x.DeleteDate == null && (x.LastName.ToUpper().Contains(filter)))
+                            return Users = await _entities.Where(x => x.DeleteDate == null && (x.LastName.ToUpper().Contains(filter)))
                                                    .OrderBy(x => x.FirstName)
                                                    .ToListAsync();
                             break;
                         //Aucun
                         default: 
-                            Users = await _entities.Where(x => x.DeleteDate == null).OrderBy(x => x.FirstName).ToListAsync();
+                            return Users = await _entities.Where(x => x.DeleteDate == null).OrderBy(x => x.FirstName).ToListAsync();
                             break;
                     }
                 }
                 else
                 {
-                    Users = await _entities.Where(x => x.DeleteDate == null).OrderBy(x => x.FirstName).ToListAsync();
+                    return Users = await _entities.Where(x => x.DeleteDate == null).OrderBy(x => x.FirstName).ToListAsync();
                 }
+
                 return Users;
             }
             catch (Exception e)
@@ -70,6 +78,7 @@ namespace DemoApp.Repository
                 throw;
             }
         }
+        #endregion
 
     }
 }

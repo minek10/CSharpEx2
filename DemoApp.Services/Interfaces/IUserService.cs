@@ -12,7 +12,7 @@ namespace DemoApp.Services.Interfaces
     public interface IUserService
     {
         Task<IEnumerable<User>> GetAll();
-        Task<List<User>> GetUsersFilter(string filter, KindOfFilter kof);
+        Task<List<User>> GetUsersFilter(string? filter, KindOfFilter kof);
         Task<User> GetById(Guid id);
         Task<HttpResponseMessage> Add(User User);
         Task<HttpResponseMessage> Delete(Guid Userid, Guid id);

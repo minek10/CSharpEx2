@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Source\\repos\\DemoApp\\DemoApp.UI\\DemoApp.UI.csproj": {}
+    "C:\\Source\\repos\\DemoApp GIT\\DemoApp.UI\\DemoApp.UI.csproj": {}
   },
   "projects": {
-    "C:\\Source\\repos\\DemoApp\\DemoApp.Data\\DemoApp.Data.csproj": {
+    "C:\\Source\\repos\\DemoApp GIT\\DemoApp.Data\\DemoApp.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Source\\repos\\DemoApp\\DemoApp.Data\\DemoApp.Data.csproj",
+        "projectUniqueName": "C:\\Source\\repos\\DemoApp GIT\\DemoApp.Data\\DemoApp.Data.csproj",
         "projectName": "DemoApp.Data",
-        "projectPath": "C:\\Source\\repos\\DemoApp\\DemoApp.Data\\DemoApp.Data.csproj",
+        "projectPath": "C:\\Source\\repos\\DemoApp GIT\\DemoApp.Data\\DemoApp.Data.csproj",
         "packagesPath": "C:\\Users\\Ricca\\.nuget\\packages\\",
-        "outputPath": "C:\\Source\\repos\\DemoApp\\DemoApp.Data\\obj\\",
+        "outputPath": "C:\\Source\\repos\\DemoApp GIT\\DemoApp.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -71,14 +71,14 @@
         }
       }
     },
-    "C:\\Source\\repos\\DemoApp\\DemoApp.Services\\DemoApp.Services.csproj": {
+    "C:\\Source\\repos\\DemoApp GIT\\DemoApp.Services\\DemoApp.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Source\\repos\\DemoApp\\DemoApp.Services\\DemoApp.Services.csproj",
+        "projectUniqueName": "C:\\Source\\repos\\DemoApp GIT\\DemoApp.Services\\DemoApp.Services.csproj",
         "projectName": "DemoApp.Services",
-        "projectPath": "C:\\Source\\repos\\DemoApp\\DemoApp.Services\\DemoApp.Services.csproj",
+        "projectPath": "C:\\Source\\repos\\DemoApp GIT\\DemoApp.Services\\DemoApp.Services.csproj",
         "packagesPath": "C:\\Users\\Ricca\\.nuget\\packages\\",
-        "outputPath": "C:\\Source\\repos\\DemoApp\\DemoApp.Services\\obj\\",
+        "outputPath": "C:\\Source\\repos\\DemoApp GIT\\DemoApp.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -102,8 +102,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Source\\repos\\DemoApp\\DemoApp.Data\\DemoApp.Data.csproj": {
-                "projectPath": "C:\\Source\\repos\\DemoApp\\DemoApp.Data\\DemoApp.Data.csproj"
+              "C:\\Source\\repos\\DemoApp GIT\\DemoApp.Data\\DemoApp.Data.csproj": {
+                "projectPath": "C:\\Source\\repos\\DemoApp GIT\\DemoApp.Data\\DemoApp.Data.csproj"
               }
             }
           }
@@ -142,14 +142,14 @@
         }
       }
     },
-    "C:\\Source\\repos\\DemoApp\\DemoApp.UI\\DemoApp.UI.csproj": {
+    "C:\\Source\\repos\\DemoApp GIT\\DemoApp.UI\\DemoApp.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Source\\repos\\DemoApp\\DemoApp.UI\\DemoApp.UI.csproj",
+        "projectUniqueName": "C:\\Source\\repos\\DemoApp GIT\\DemoApp.UI\\DemoApp.UI.csproj",
         "projectName": "DemoApp.UI",
-        "projectPath": "C:\\Source\\repos\\DemoApp\\DemoApp.UI\\DemoApp.UI.csproj",
+        "projectPath": "C:\\Source\\repos\\DemoApp GIT\\DemoApp.UI\\DemoApp.UI.csproj",
         "packagesPath": "C:\\Users\\Ricca\\.nuget\\packages\\",
-        "outputPath": "C:\\Source\\repos\\DemoApp\\DemoApp.UI\\obj\\",
+        "outputPath": "C:\\Source\\repos\\DemoApp GIT\\DemoApp.UI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -173,11 +173,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Source\\repos\\DemoApp\\DemoApp.Data\\DemoApp.Data.csproj": {
-                "projectPath": "C:\\Source\\repos\\DemoApp\\DemoApp.Data\\DemoApp.Data.csproj"
+              "C:\\Source\\repos\\DemoApp GIT\\DemoApp.Data\\DemoApp.Data.csproj": {
+                "projectPath": "C:\\Source\\repos\\DemoApp GIT\\DemoApp.Data\\DemoApp.Data.csproj"
               },
-              "C:\\Source\\repos\\DemoApp\\DemoApp.Services\\DemoApp.Services.csproj": {
-                "projectPath": "C:\\Source\\repos\\DemoApp\\DemoApp.Services\\DemoApp.Services.csproj"
+              "C:\\Source\\repos\\DemoApp GIT\\DemoApp.Services\\DemoApp.Services.csproj": {
+                "projectPath": "C:\\Source\\repos\\DemoApp GIT\\DemoApp.Services\\DemoApp.Services.csproj"
               }
             }
           }
