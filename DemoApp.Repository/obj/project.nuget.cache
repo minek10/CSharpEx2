@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HRhiN7OV9M3P2GuYKfjl45GYZJ1nAEb0/kkGIkFMWjIByxq8uH/fH9uSOfl1d6N9BC07evvTEhhWoMF7/8SnBA==",
+  "dgSpecHash": "vyoZ7LKcDeTgXueS4cZY+bvS2CsBdLHZiQr7XZJOeBTZAkZXlBBORAo+XomX+19VfbfyhpGzYhI+NQZv37jGKg==",
   "success": true,
-  "projectFilePath": "C:\\Source\\repos\\DemoApp GIT\\DemoApp.Repository\\DemoApp.Repository.csproj",
+  "projectFilePath": "C:\\Source\\repos\\DemoApp GIT - Copie\\DemoApp.Repository\\DemoApp.Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ricca\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.0\\microsoft.entityframeworkcore.7.0.0.nupkg.sha512",
     "C:\\Users\\Ricca\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.0\\microsoft.entityframeworkcore.abstractions.7.0.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f3ylCvU8bnSL+62eBIFLDPyPkQcsYU4cbrTaoGxqC8Hpe7hsW64rz5w/h2pa9YqLOK9aFsWHcbx751rDun6M5A==",
+  "dgSpecHash": "HpoeBGdhr7u4TPc0eszBzCgnEw1+iS7gDM9uiNL4e7XvxSg51/UpobfGGXfd1u4h+Q6BRKLtEJH6FL/paUhzzg==",
   "success": true,
-  "projectFilePath": "C:\\Source\\repos\\DemoApp GIT\\DemoApp.UI\\DemoApp.UI.csproj",
+  "projectFilePath": "C:\\Source\\repos\\DemoApp GIT - Copie\\DemoApp.UI\\DemoApp.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ricca\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.0\\microsoft.aspnetcore.authorization.3.1.0.nupkg.sha512",
     "C:\\Users\\Ricca\\.nuget\\packages\\microsoft.aspnetcore.components\\3.1.0\\microsoft.aspnetcore.components.3.1.0.nupkg.sha512",
