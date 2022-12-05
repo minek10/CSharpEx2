@@ -38,11 +38,11 @@ namespace DemoApp.Services
         #endregion
 
         #region Delete
-        public async Task<HttpResponseMessage> Delete(Guid userid, Guid id)
+        public async Task<HttpResponseMessage> Delete(Guid userid)
         {
             try
             {
-                HttpResponseMessage result = await _httpClient.DeleteAsync($"api/user/userdelete/{userid}/{id}");
+                HttpResponseMessage result = await _httpClient.DeleteAsync($"api/user/{userid}");
                 return result;
             }
             catch (Exception ex)

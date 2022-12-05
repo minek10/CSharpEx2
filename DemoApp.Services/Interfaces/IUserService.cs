@@ -15,7 +15,7 @@ namespace DemoApp.Services.Interfaces
         Task<List<User>> GetUsersFilter(string? filter, KindOfFilter kof);
         Task<User> GetById(Guid id);
         Task<HttpResponseMessage> Add(User User);
-        Task<HttpResponseMessage> Delete(Guid Userid, Guid id);
+        Task<HttpResponseMessage> Delete(Guid Userid);
         Task<HttpResponseMessage> Update(User User);
         
     }

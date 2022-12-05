@@ -111,9 +111,7 @@ namespace DemoApp.UI.Pages
         {
             if (accepted)
             {
-                Guid userid = Guid.Parse("bf80287a-b043-438b-acaf-f6208361deb0");
-
-                var res = await UserService.Delete(_id, userid);
+                var res = await UserService.Delete(_id);
                 if (res.IsSuccessStatusCode)
                 {
                     Toaster.Success("Utilisateur supprimé");

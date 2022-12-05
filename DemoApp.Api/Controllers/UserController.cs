@@ -129,8 +129,8 @@ namespace DemoApp.Api.Controllers
 		#endregion
 
 		#region Soft Delete
-		[HttpDelete("userdelete/{userid}/{usertrackingid}")]
-		public async Task<IActionResult> Delete(Guid userid, Guid usertrackingid)
+		[HttpDelete("{userid}")]
+		public async Task<IActionResult> Delete(Guid userid)
 		{
 			try
 			{
@@ -141,7 +141,7 @@ namespace DemoApp.Api.Controllers
 				}
 				else
 				{
-					User.DeleteTrackingUserId = usertrackingid;
+					User.DeleteTrackingUserId = Guid.Parse("10000000-0000-0000-0000-000000000000");
 					await _unitOfWork.UserRepository.Put(userid, User);
 					return Ok("L'élément a bien été supprimé");
 				}

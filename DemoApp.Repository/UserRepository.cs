@@ -30,7 +30,7 @@ namespace DemoApp.Repository
 
         public async override Task<User> GetById(Guid id)
         {
-            User User = await _entities.Where(x => x.DeleteDate == null).FirstOrDefaultAsync();
+            User User = await _entities.Where(x => x.DeleteDate == null && x.Id == id).FirstOrDefaultAsync();
             return User;
         }
 
