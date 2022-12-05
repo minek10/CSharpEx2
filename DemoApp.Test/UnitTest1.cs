@@ -1,12 +1,9 @@
-using DemoApp.Api.Controllers;
 using DemoApp.Data.Context;
 using DemoApp.Data.Enum;
 using DemoApp.Data.Model;
 using DemoApp.Repository;
 using DemoApp.Repository.Interfaces;
-using DemoApp.Repository.UnitOfWork;
 using Microsoft.EntityFrameworkCore;
-using Moq;
 
 namespace DemoApp.Test
 {

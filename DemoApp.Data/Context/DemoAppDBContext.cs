@@ -22,6 +22,7 @@ namespace DemoApp.Data.Context
 
         public override Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = default)
         {
+            //Post
             var AddedEntities = ChangeTracker.Entries().Where(E => E.State == EntityState.Added).ToList();
 
             AddedEntities.ForEach(E =>
@@ -29,12 +30,12 @@ namespace DemoApp.Data.Context
                 E.Property("CreationDate").CurrentValue = DateTime.Now;
             });
 
+            //Update or SoftDelete
             var EditedEntities = ChangeTracker.Entries().Where(E => E.State == EntityState.Modified).ToList();
-
 
             EditedEntities.ForEach(E =>
             {
-                /*Attention SofDelete*/
+                //! differentiate between update and soft delete with the DeleteTrackingUserId
                 if (E.Property("DeleteTrackingUserId").CurrentValue?.ToString() != "00000000-0000-0000-0000-000000000000")
                 {
                     E.Property("DeleteDate").CurrentValue = DateTime.Now;
